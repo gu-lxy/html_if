@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 9.定义一个四位数的整数，分别打印各个位数的值。
+	比如1234，就分别打印千位数值1，百位数值2十位数值3，和个位数值4
+	比如6498，就分别打印千位数值6，百位数值4十位数值9，和个位数值8
+		 */
+		var a = 1234;
+		var qian = parseInt(a / 1000);
+		var bai = parseInt(a / 100) % 10 ;
+		var shi = parseInt(a % 100 / 10) ;
+		var ge = a % 10 ;
+		console.log(qian);
+		console.log(bai);
+		console.log(shi);
+		console.log(ge);
+		
+		/*
+		 * 11.使用三目运算符来做：给定一个数字：正数，负数，零。
+		 * 语法：条件？语句1：语句2；
+		 */
+		var num = 0;
+		var res = num > 0? "正数":num < 0 ?"负数":"零";
+		console.log(res);
+	</script>
+</html>

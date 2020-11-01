@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>switch语句</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 1-3月：第一季度
+		 * 4-6月：第二季度
+		 * 7-9月：第三季度
+		 * 10-12月：第四季度
+		 * 
+		 * switch(表达式){
+		 * 	case 数值1：分支语句1；break；
+		 * 	case 数值2：分支语句2；break；
+		 * 	。。。
+		 * 	default：
+		 * }
+		 * 
+		 * 注意点：
+		 * 1.case是无序的。
+		 * 2.default语句是可选的。
+		 * 3.case后的数值：
+		 * 4.break用于防止switch穿透。
+		 * 
+		 * switch的执行流程：
+		 * switch后的表达式的值，和case后的数值进行比较：全等===
+		 * 和哪个case匹配上了，就执行哪个分支语句，直到遇到break位置
+		 * 如果没有break语句，当匹配上某个case后，那么后续的case不匹配了穿透执行，直到遇到break位置。
+		 */
+		//给定一个数字，判断数值是几，就打印第几个季度
+		var a = 2;
+		switch( a ){
+			case 1:
+				console.log('第一季度');
+				break;
+			case 2:
+				console.log('第二季度');
+//				break;		
+			case 3:
+				console.log('第三季度');
+//				break;
+			case 4:
+				console.log('第四季度');
+				break;
+			default:
+				console.log('数据有误。。')
+				break;
+		}
+		console.log('switch结束了。。')
+		/*
+		 * 练习1：给定一个数字，如果是1，打印光头强，如果是2打印熊大，如果是3打印熊二，否则打印催化
+		 * 练习2：练习4：给定一个月份，打印该月的天数。
+			 * 	1，3，5，7，8，10，12-->31天
+			 * 	4，6,9,11-->30天
+			 * 	2，28天
+		 */
+		var month = 3;
+		var day = 0;
+		switch(month){
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				day = 31;
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				day = 30;
+				break;
+			case 2:
+				day = 28;
+				break;
+			default:
+				console.log('月份有误。。')
+		}
+		console.log(month + '月的天数是：'+day);
+	</script>
+</html>

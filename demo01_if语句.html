@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>if语句</title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+				 * if语句：
+				 * if(条件){
+		  			语句1；
+					}
+				 */
+		//1.定义一个数值，如果大于0，就打印比0大
+		var num = 5;
+		if (num > 0) {
+			console.log("比0大");
+			console.log("比0大");
+			console.log("比0大");
+			console.log("比0大");
+		}
+		console.log('if语句结束。。。')
+		/*
+		 * 练习1：给定一个年龄，如果大于22岁，打印输出可以娶媳妇啦
+		 * 练习2：给定一个数值，打印它的绝对值
+		 * 练习3：给定一个成绩，如果大于等于60，就打印及格
+		 */
+		var age = 18;
+		if (age > 22) {
+			console.log('可以娶媳妇了。')
+		}
+		
+		//ctrl+shift+f,格式化代码，搜狗输入的繁简体的快捷键冲突
+		var a = -4;
+//		if(a > 0){
+//			console.log(a);
+//		}
+//		if(a < 0){
+//			console.log(-a);
+//		}
+
+		if(a < 0){
+			a = -a; // --4-->4
+		}
+		console.log(a);
+		
+		var score = 88;
+		if(score >= 60){
+			console.log('及格啦')
+		}
+	</script>
+
+</html>
